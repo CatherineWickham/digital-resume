@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
   </head>
   <body>
     <!-- ====== Nagivation Bar ====== -->
@@ -33,36 +33,42 @@
       <a class="navButton" href="#skills">Skills</a>
     </nav>
     <!-- ======= Hero Section ====== -->
-    <header>
-      <picture>
-        <source srcset="images/profileSmall.jpg" media="(max-width: 425px)" />
-        <img
-          id="profilePicture"
-          src="images/profilePicLarge.jpg"
-          alt="Profile Picture"
-          width="175"
-        />
-      </picture>
+    <div id="headerBackground">
+      <header>
+        <picture>
+          <source
+            srcset="images/profilePicSmall.jpg"
+            media="(max-width: 425px)"
+          />
+          <img
+            id="profilePicture"
+            src="images/profilePicLarge.jpg"
+            alt="Profile Picture"
+            width="175"
+          />
+        </picture>
 
-      <section id="heroContent">
-        <hgroup>
-          <h1>Catherine Wickham</h1>
-          <h2>Aspiring Software Developer</h2>
-        </hgroup>
-        <p id="heroText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
-          habitasse platea dictumst quisque sagittis. Suscipit tellus mauris a
-          diam.
-        </p>
-        <button id="heroButton"><a href="#contactHeading">Contact</a></button>
-      </section>
-    </header>
+        <section id="heroContent">
+          <hgroup>
+            <h1>Catherine Wickham</h1>
+            <h2>Aspiring Software Developer</h2>
+          </hgroup>
+          <p id="heroText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac
+            habitasse platea dictumst quisque sagittis. Suscipit tellus mauris a
+            diam.
+          </p>
+          <button id="heroButton"><a href="#contactHeading">Contact</a></button>
+        </section>
+      </header>
+    </div>
+
     <!-- ====== Main Article ====== -->
 
     <!-- ====== Profile Section ====== -->
     <main>
-      <section id="profile">
+      <section class="mainSection" id="profile">
         <h2>Profile</h2>
         <div id="profileText">
           <p>Item: Lorem ipsum dolor sit amet</p>
@@ -74,7 +80,7 @@
         </div>
       </section>
       <!-- ====== Education Section ====== -->
-      <section id="education">
+      <section class="mainSection" id="education">
         <h2>Education</h2>
 
         <div class="sectionItem" id="educationItem1">
@@ -150,7 +156,7 @@
         </div>
       </section>
       <!-- ====== Experience Section ====== -->
-      <section id="experience">
+      <section class="mainSection" id="experience">
         <h2>Experience</h2>
 
         <div class="sectionItem" id="experienceItem1">
@@ -203,7 +209,7 @@
         </div>
       </section>
       <!-- ====== Skills Section ====== -->
-      <section id="skills">
+      <section class="mainSection" id="skills">
         <h2>Skills</h2>
         <div id="skillsText">
           <p>
@@ -215,38 +221,41 @@
       </section>
     </main>
     <!-- ====== Contact Section ====== -->
-    <footer>
-      <h2 id="contactHeading">Contact</h2>
-      <p id="contactText">
-        Please fill out this
-        <a href="https://www.isabelina.co.za/">contact form</a> to get in touch
-      </p>
-      <div id="iconsBox">
-        <a
-          class="icons"
-          title="Go to GitHub page"
-          href="https://github.com/CatherineWickham"
-          target="_blank"
-          ><i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-        <a
-          class="icons"
-          title="Go to LinkedIn page"
-          href="https://www.linkedin.com/in/catherine-wickham-70b037258"
-          target="_blank"
-          ><i class="fa fa-linkedin-square" aria-hidden="true" ;></i>
-        </a>
-        <a
-          class="icons"
-          title="Send email"
-          href="mailto: cathhwickham@gmail.com"
-          target="_blank"
-          ><i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-        <a class="icons" title="Call" href="tel: +27716838349" target="_blank"
-          ><i class="fa fa-phone-square" aria-hidden="true"></i>
-        </a>
-      </div>
-    </footer>
+    <div id="footerBackground">
+      <footer>
+        <h2 id="contactHeading">Contact</h2>
+        <p id="contactText">
+          Please fill out this
+          <a href="https://www.isabelina.co.za/">contact form</a> to get in
+          touch
+        </p>
+        <div id="iconsBox">
+          <a
+            class="icons"
+            title="Go to GitHub page"
+            href="https://github.com/CatherineWickham"
+            target="_blank"
+            ><i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a
+            class="icons"
+            title="Go to LinkedIn page"
+            href="https://www.linkedin.com/in/catherine-wickham-70b037258"
+            target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true" ;></i>
+          </a>
+          <a
+            class="icons"
+            title="Send email"
+            href="mailto: cathhwickham@gmail.com"
+            target="_blank"
+            ><i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a class="icons" title="Call" href="tel: +27716838349" target="_blank"
+            ><i class="fa fa-phone-square" aria-hidden="true"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

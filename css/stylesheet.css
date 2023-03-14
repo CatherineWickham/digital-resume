@@ -1,0 +1,90 @@
+/* General */
+
+body {
+    font-family: Poppins;
+    background-color: #111717;
+    margin: 0px;
+}
+
+main{
+    background-color: rgb(17, 23, 23);
+}
+
+nav {
+    background-color: rgb(17, 23, 23);
+}
+
+#headerBackground {
+    background-image: url(/images/backgroundLarge.jpg);
+    background-repeat:no-repeat ;
+    background-size:100% ;
+    background-attachment:fixed;
+}
+
+header {
+    background-color: rgb(17, 23, 23, 0.5);
+    width: 100%;
+}
+
+#footerBackground {
+    background-image: url(/images/backgroundLarge.jpg);
+    background-repeat:no-repeat ;
+    background-size:100% ;
+    background-attachment:fixed;
+}
+
+footer {
+    background-color: rgb(17, 23, 23, 0.5);
+    width: 100%;
+}
+
+#profilePicture {
+    border-radius: 100%;
+    height: 20vw;
+    width: auto;
+}
+
+h1 {
+    color: #E7E8E5;
+}
+
+h2 {
+    color: #CA9256;
+}
+
+h3 {
+    color: #A5C9C5;
+}
+
+p {
+    color: #E7E8E5;
+}
+
+a {
+    color: #A5C9C5;
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+
+#heroButton {
+    background-color: #CA9256; 
+    border-style: none;
+    border-radius: 1vw;
+    font-family: Poppins;
+    color: #ffffff;
+}
+
+.icons {
+    text-decoration: none;
+    color: #CA9256;
+    margin: 1%;
+    font-size: 2em;
+}
+
+.mainSection {
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 1vw;
+}
