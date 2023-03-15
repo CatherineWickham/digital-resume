@@ -19,6 +19,7 @@ nav {
     background-repeat:no-repeat ;
     background-size:100% ;
     background-attachment:fixed;
+    background-position: center;
 }
 
 header {
@@ -60,23 +61,6 @@ p {
     color: #E7E8E5;
 }
 
-a {
-    color: #A5C9C5;
-    text-decoration: none;
-  }
-  
-a:hover {
-    text-decoration: underline;
-  }
-
-#heroButton {
-    background-color: #CA9256; 
-    border-style: none;
-    border-radius: 1vw;
-    font-family: Poppins;
-    color: #ffffff;
-}
-
 .icons {
     text-decoration: none;
     color: #CA9256;
@@ -87,4 +71,34 @@ a:hover {
 .mainSection {
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 1vw;
+}
+
+a.navButton {
+    color: #E7E8E5;
+    text-decoration: none;
+  }
+  
+a.navButton:hover {
+    background-color: rgb(59, 82, 83, 0.5);
+  }
+
+button {
+    background-color: #CA9256; 
+    border-style: none;
+    border-radius: 1vw;
+    font-family: Poppins;
+}
+
+a.heroButton {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.textLink {
+    color: #A5C9C5;
+    text-decoration: none;
+}
+
+a.textLink:hover {
+    text-decoration: underline;
 }
