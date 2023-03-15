@@ -32,6 +32,8 @@ header {
     background-repeat:no-repeat ;
     background-size:100% ;
     background-attachment:fixed;
+    background-position: center;
+    background-position-y: 40%;
 }
 
 footer {
@@ -61,7 +63,7 @@ p {
     color: #E7E8E5;
 }
 
-dates {
+.dates {
     color: #A5C9C5;
 }
 
@@ -89,8 +91,11 @@ a.navButton:hover {
 button {
     background-color: #CA9256; 
     border-style: none;
-    border-radius: 1vw;
+    border-radius: 5px;
     font-family: Poppins;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 a.heroButton {
@@ -107,7 +112,7 @@ a.textLink:hover {
     text-decoration: underline;
 }
 
-/* Application of CSS grid to navbar */
+/* Layout of navbar with CSS grid */
 
 nav {
     display:grid;
@@ -138,4 +143,64 @@ a.navButton {
     text-decoration: none;
     color: #CA9256;
     font-size: 1.2em;  
+}
+
+/* Layout of Hero section with flexbox */
+
+header {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#profilePictureOuter {
+    margin-left: 2%;
+}
+
+#heroContent {
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Layout of Main content section with flexbox */
+
+main {
+    display: flex;
+}
+
+#mainColumn1, #mainColumn2 {
+    flex: 1;
+}
+
+.mainSection {
+    margin: 6%;
+    padding: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+#education {
+    margin-left: 0%;
+}
+
+/* Layout of Contact section with flexbox */
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+#contactText{
+    flex: 2;
+    margin: 4%;
+}
+
+#iconsBox{
+    flex: 1;
+    text-align: center;
+    margin: 4%;
 }
