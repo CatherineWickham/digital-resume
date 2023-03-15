@@ -1,4 +1,4 @@
-/* General */
+/* General styling - font and background colours */
 
 body {
     font-family: Poppins;
@@ -105,4 +105,37 @@ a.textLink {
 
 a.textLink:hover {
     text-decoration: underline;
+}
+
+/* Application of CSS grid to navbar */
+
+nav {
+    display:grid;
+    grid-template-columns: 3% 1fr 15% 15% 15% 15% ;
+    grid-template-rows: 6vh;
+    grid-gap: 0.5%;
+    width: 100%;
+    position: fixed;
+}
+
+a.navButton {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#navTitle {
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    color: #E7E8E5;
+}
+
+#downloadCV {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    color: #CA9256;
+    font-size: 1.2em;  
 }
