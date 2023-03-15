@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Catherine Wickham Digital Resumé</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/css/contactFormStylesheet.css"
+    />
+  </head>
+  <body>
+    <div id="background">
+      <div id="formContainer">
+        <form
+          action="https://formsubmit.co/cathhwickham@gmail.com"
+          method="POST"
+        >
+          <hgroup>
+            <h1>Contact Form</h1>
+            <p>Please fill in your details below and I will get back to you:</p>
+          </hgroup>
+          <select id="subject" name="subject" required>
+            <option value="job Offer">
+              Please select the subject of your message
+            </option>
+            <option value="job-offer">Job Opportunity</option>
+            <option value="general">General Enquiry</option>
+          </select>
+
+          <input
+            type="text"
+            id="name"
+            name="Name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Email Address"
+            required
+          />
+
+          <textarea
+            id="additional-info"
+            name="additional-info"
+            cols="45"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+
+          <input type="submit" id="form-submit" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Resume contact form response"
+          />
+          <input type="hidden" name="_template" value="box" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

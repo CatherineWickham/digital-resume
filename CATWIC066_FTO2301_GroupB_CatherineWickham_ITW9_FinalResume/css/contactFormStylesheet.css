@@ -1,0 +1,56 @@
+body {
+    font-family: Poppins;
+    background-image: url(/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/images/backgroundLarge.jpg);
+    background-position: center;
+    color: #E7E8E5;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgb(17, 23, 23, 0.5), rgb(17, 23, 23, 0)) ;
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    background-color: #111717;
+    border-radius: 1vw;
+    padding: 5%;
+    width: 60vw;
+    margin: 10%;
+    filter: drop-shadow(0rem 0rem 0.2rem #111717);
+}
+
+hgroup{
+    margin-bottom: 5%;
+}
+
+input, textarea, select {
+    background-color: #111717;
+    color: #E7E8E5;
+    border-style: none;
+    border-bottom: rgba(86, 86, 86,1) solid;
+    border-width: 2px;
+    font-family: Poppins;
+    width: 95%;
+    margin: 1%;
+    font-size: 1em;
+}
+
+#form-submit {
+    background-color:#CA9256; 
+    color: #ffffff;
+    border-radius: 5px;
+    border-color:#CA9256; 
+    border-style: outset;
+    border-width: 2px;
+    width: 20%;
+    font-size: 1em;
+}
