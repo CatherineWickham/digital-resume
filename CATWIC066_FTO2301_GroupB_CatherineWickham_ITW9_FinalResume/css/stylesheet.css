@@ -4,6 +4,7 @@ body {
     font-family: Poppins;
     background-color: #111717;
     margin: 0px;
+    font-size: 1em;
 }
 
 main{
@@ -70,7 +71,7 @@ p {
     color: #E7E8E5;
 }
 
-.dates {
+.accent {
     color: #A5C9C5;
 }
 
@@ -100,10 +101,11 @@ button {
     border-style: none;
     border-radius: 5px;
     font-family: Poppins;
-    padding: 2%;
+    padding: 1%;
     padding-left: 4%;
     padding-right: 4%;
-    font-size: 2vw;
+    margin-top: 2%;
+    font-size: 1em;
 }
 
 a.heroButton {
@@ -124,7 +126,7 @@ a.textLink:hover {
 
 nav {
     display:grid;
-    grid-template-columns: 3% 1fr 15% 15% 15% 15% ;
+    grid-template-columns: 1fr 15% 15% 15% 15% ;
     grid-template-rows: 6vh;
     grid-gap: 0.5%;
     width: 100vw;
@@ -143,18 +145,10 @@ a.navButton {
     display: grid;
     align-items: center;
     justify-items: left;
-    color: #E7E8E5;
-    height: 4vh;
-}
-
-#downloadCV {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    text-decoration: none;
     color: #CA9256;
-    font-size: 1.2em;
-    height: 4vh;  
+    font-weight: 900;
+    height: 4vh;
+    padding-left: 5%;
 }
 
 /* Layout of Hero section with flexbox */
@@ -202,8 +196,9 @@ footer {
 }
 
 #contactText{
-    flex: 2;
+    flex: 1;
     margin: 4%;
+    padding: 2%;
 }
 
 #iconsBox{
@@ -214,7 +209,7 @@ footer {
 
 /* ===================== Mobile ===================== */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     main{
         flex-direction: column;
     }
@@ -222,17 +217,14 @@ footer {
         margin: 6%;
         margin-top: 0%
     }
-    #profilePictureOuter{
-        margin: 0%;
-    }
     body{
         font-size: 0.7em;
     }
-    nav{
+    nav {
         font-size: 2.5vw;
     }
     .icons {
-        font-size: 6vw;
+        font-size: 6.8vw;
     }
     header {
         padding-top: 15%;
@@ -247,22 +239,77 @@ footer {
     #footerBackground {
         background-position: bottom;
     }
+    button {
+        font-size: 2.5vw;
+    }
 }
 
 /* ===================== Tablet ===================== */
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 501px) {
+    body{
+        font-size: 0.7em;
+    }
+    nav {
+        font-size: 2vw;
+    }
+    .icons {
+        font-size: 3em;
+    }
+    button {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 0.8em;
+    }
+    nav {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 1.1em;
+    }
+    #profilePicture {
+        height: 12em;
+        width: auto;
+    }
+    #heroContent{
+        width: 60%;
+    }
 
 }
 
 /* ===================== Laptop ===================== */
 
 @media screen and (min-width: 1024px) {
+    body{
+        font-size: 1em;
+    }
+    nav {
+        font-size: 1em;
+    }
+    button {
+        font-size: 0.9em;
+    }
 
+    nav, a.navButton, #navTitle {
+        font-size: 1em;
+        height: 5vh;
+    }
 }
 
 /* ===================== Large laptop ===================== */
 
 @media screen and (min-width: 1440px) {
-
+    body{
+        font-size: 1.1em;
+    }
+    nav {
+        font-size: 1.1em;
+    }
+    button {
+        font-size: 1em;
+    }
 }
