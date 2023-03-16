@@ -293,20 +293,7 @@
     <!-- ====== Contact Section start ====== -->
     <div id="footerBackground">
       <footer>
-        <hgroup id="contactText">
-          <h2 id="contactHeading">Contact</h2>
-          <p>
-            Please fill out this
-            <a
-              class="textLink"
-              href="/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/contactForm.html"
-              target="_blank"
-              >contact form</a
-            >
-            to get in touch
-          </p>
-        </hgroup>
-
+        <h2 id="contactHeading">Contact</h2>
         <div id="iconsBox">
           <a
             class="icons"
@@ -341,6 +328,58 @@
             ><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
           </a>
         </div>
+        <p id="contactText">
+          If you would like to leave a message, please fill in the form below:
+        </p>
+        <form
+          action="https://formsubmit.co/cathhwickham@gmail.com"
+          method="POST"
+        >
+          <select id="subject" name="subject" required>
+            <option value="None">Subject</option>
+            <option value="Job Offer">Job Opportunity</option>
+            <option value="General">General Enquiry</option>
+          </select>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="emailAddress"
+            name="emailAddress"
+            placeholder="Email Address"
+            required
+          />
+
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Phone Number (optional)"
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            cols="45"
+            rows="4"
+            placeholder="Message (optional)"
+          ></textarea>
+          <br />
+          <input type="submit" id="formSubmit" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Resume contact form response"
+          />
+          <input type="hidden" name="_template" value="box" />
+        </form>
       </footer>
     </div>
     <!-- ====== Contact Section end ====== -->

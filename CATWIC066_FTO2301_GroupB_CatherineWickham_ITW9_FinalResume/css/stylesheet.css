@@ -78,8 +78,10 @@ p {
 .icons {
     text-decoration: none;
     color: #CA9256;
-    margin: 2%;
     font-size: 2em;
+    padding-left:1%;
+    padding-right:1%;
+    filter: drop-shadow(0.5rem 0.5rem 0.75rem rgb(17, 23, 23, 0.8));
 }
 
 .mainSection {
@@ -189,25 +191,6 @@ main {
     margin-left: 0%;
 }
 
-/* Layout of Contact section with flexbox */
-
-footer {
-    display: flex;
-    align-items: center;
-}
-
-#contactText{
-    flex: 1;
-    margin: 4%;
-    padding: 2%;
-}
-
-#iconsBox{
-    flex: 1.5;
-    text-align: center;
-    margin: 4%;
-}
-
 /* ===================== Mobile ===================== */
 
 @media screen and (max-width: 500px) {
@@ -225,7 +208,7 @@ footer {
         font-size: 2.5vw;
     }
     .icons {
-        font-size: 6.8vw;
+        font-size: 9vw;
     }
     header {
         padding-top: 15%;
@@ -255,7 +238,7 @@ footer {
         font-size: 2vw;
     }
     .icons {
-        font-size: 3em;
+        font-size: 4em;
     }
     button {
         font-size: 2vw;
@@ -360,6 +343,67 @@ footer {
     border-width: 0.5vw;
 }
 
-button {
-    filter: drop-shadow(0.rem 0.2rem 0.5rem rgb(17, 23, 23, 1));
+/* Layout of Contact section with flexbox */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contactHeading {
+    width: 80%;
+    margin-top: 3%;
+    color: #E7E8E5;
+}
+
+#contactText {
+    width: 60%;
+    margin: 2%;
+}
+
+#iconsBox{
+    text-align: center;
+    margin: 2%;
+    width:100%;
+}
+
+/* Form styling */
+
+form {
+    background-color: #111717;
+    border-radius: 1vw;
+    filter: drop-shadow(0rem 0rem 0.2rem #111717);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+input, textarea, select {
+    background-color: #111717;
+    color: #E7E8E5;
+    border-style: none;
+    border-bottom: rgba(86, 86, 86,1) solid;
+    border-width: 2px;
+    font-family: Poppins;
+    width: 80%;
+    margin: 1%;
+    font-size: 0.9em;
+}
+
+#formSubmit {
+    background-color:#CA9256; 
+    color: #ffffff;
+    border-radius: 5px;
+    border-color:#CA9256; 
+    border-style: outset;
+    border-width: 2px;
+    width: 20%;
+    font-size: 0.8em;
 }
