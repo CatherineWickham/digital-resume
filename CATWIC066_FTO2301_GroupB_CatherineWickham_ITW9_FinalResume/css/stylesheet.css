@@ -106,6 +106,15 @@ header {
     border-width: 0.5vw;
 }
 
+#heroContent {
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 #careerTitle {
     color: #A5C9C5;
 }

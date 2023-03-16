@@ -1,5 +1,10 @@
 # Catherine Wickham Digital Resumé
+
 Project code: CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_Final Resume<br />
+<br />
+Link to Wireframe in Figma: <br />
+https://www.figma.com/file/k0ukDc76YPn7BgrSmNLznz/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW_Resume-Wireframe?node-id=0%3A1&t=q2bRKynJRpfuBRPa-1
+<br />
 <br />
 Author: Catherine Wickham<br />
 <br />
