@@ -132,6 +132,7 @@ nav {
     width: 100vw;
     position: fixed;
     height: 4vh;
+    z-index: 1;
 }
 
 a.navButton {
@@ -268,6 +269,9 @@ footer {
     nav {
         font-size: 1.2em;
     }
+    .icons {
+        font-size: 3.5em;
+    }
     button {
         font-size: 1.1em;
     }
@@ -298,6 +302,9 @@ footer {
         font-size: 1em;
         height: 5vh;
     }
+    #heroContent{
+        width: 50%;
+    }
 }
 
 /* ===================== Large laptop ===================== */
@@ -312,4 +319,47 @@ footer {
     button {
         font-size: 1em;
     }
+    #heroContent{
+        width: 40%;
+    }
+}
+
+/* Icons animation */
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-8px);
+    filter:opacity(70%);}
+    }
+
+.icons :hover {
+    animation-name: bounce;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Profile pic animation */
+@keyframes pop {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+    }
+
+#profilePictureOuter :hover {
+    animation-name: pop;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+#profilePicture {
+    filter: drop-shadow(0.5rem 0.5rem 0.75rem rgb(17, 23, 23, 0.8));
+    border-style: inset;
+    border-color: #CA9256;
+    border-width: 0.5vw;
+}
+
+button {
+    filter: drop-shadow(0.rem 0.2rem 0.5rem rgb(17, 23, 23, 1));
 }
