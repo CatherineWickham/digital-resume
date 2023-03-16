@@ -7,47 +7,6 @@ body {
     font-size: 1em;
 }
 
-main{
-    background-color: rgb(17, 23, 23);
-}
-
-nav {
-    background-color: rgb(17, 23, 23);
-}
-
-#headerBackground {
-    background-image: url(/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/images/backgroundLarge.jpg);
-    background-repeat:no-repeat ;
-    background-size:100% ;
-    background-attachment:fixed;
-    background-position: center;
-}
-
-header {
-    background-color: rgb(17, 23, 23, 0.5);
-    width: fit-content;
-}
-
-#footerBackground {
-    background-image: url(/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/images/backgroundLarge.jpg);
-    background-repeat:no-repeat ;
-    background-size:100% ;
-    background-attachment:fixed;
-    background-position: center;
-    background-position-y: 40%;
-}
-
-footer {
-    background-color: rgb(17, 23, 23, 0.5);
-    width: 100%;
-}
-
-#profilePicture {
-    border-radius: 100%;
-    height: 20vw;
-    width: auto;
-}
-
 h1 {
     color: #E7E8E5;
     font-size: 1.8em;
@@ -56,10 +15,6 @@ h1 {
 h2 {
     color: #CA9256;
     font-size: 1.4em;
-}
-
-#careerTitle {
-    color: #A5C9C5;
 }
 
 h3 {
@@ -75,28 +30,90 @@ p {
     color: #A5C9C5;
 }
 
-.icons {
+a.textLink {
+    color: #A5C9C5;
     text-decoration: none;
-    color: #CA9256;
-    font-size: 2em;
-    padding-left:1%;
-    padding-right:1%;
-    filter: drop-shadow(0.5rem 0.5rem 0.75rem rgb(17, 23, 23, 0.8));
 }
 
-.mainSection {
-    background-color: rgb(255, 255, 255, 0.1);
-    border-radius: 1vw;
+a.textLink:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styling */
+
+nav {
+    background-color: rgb(17, 23, 23);
+    display:grid;
+    grid-template-columns: 1fr 15% 15% 15% 15% ;
+    grid-template-rows: 6vh;
+    grid-gap: 0.5%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    height: 4vh;
+}
+
+#navTitle {
+    color: #CA9256;
+    font-weight: 900;
+    padding-left: 5%;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    height: 4vh;
 }
 
 a.navButton {
     color: #E7E8E5;
     text-decoration: none;
-  }
-  
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 4vh;
+}
+
 a.navButton:hover {
     background-color: rgb(59, 82, 83, 0.5);
   }
+
+/* Hero section styling */
+
+header {
+    background-color: rgb(17, 23, 23, 0.5);
+    width: fit-content;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#headerBackground {
+    background-image: url(/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/images/backgroundLarge.jpg);
+    background-repeat:no-repeat ;
+    background-size:100% ;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+#profilePicture {
+    border-radius: 100%;
+    height: 20vw;
+    width: auto;
+    filter: drop-shadow(0.5rem 0.5rem 0.75rem rgb(17, 23, 23, 0.8));
+    border-style: inset;
+    border-color: #CA9256;
+    border-width: 0.5vw;
+}
+
+#careerTitle {
+    color: #A5C9C5;
+}
+
+a.heroButton {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 button {
     background-color: #CA9256; 
@@ -110,69 +127,10 @@ button {
     font-size: 1em;
 }
 
-a.heroButton {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-a.textLink {
-    color: #A5C9C5;
-    text-decoration: none;
-}
-
-a.textLink:hover {
-    text-decoration: underline;
-}
-
-/* Layout of navbar with CSS grid */
-
-nav {
-    display:grid;
-    grid-template-columns: 1fr 15% 15% 15% 15% ;
-    grid-template-rows: 6vh;
-    grid-gap: 0.5%;
-    width: 100vw;
-    position: fixed;
-    height: 4vh;
-    z-index: 1;
-}
-
-a.navButton {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 4vh;
-}
-
-#navTitle {
-    display: grid;
-    align-items: center;
-    justify-items: left;
-    color: #CA9256;
-    font-weight: 900;
-    height: 4vh;
-    padding-left: 5%;
-}
-
-/* Layout of Hero section with flexbox */
-
-header {
-    padding: 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#heroContent {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Layout of Main content section with flexbox */
+/* Main content section styling */
 
 main {
+    background-color: rgb(17, 23, 23);
     display: flex;
 }
 
@@ -181,6 +139,8 @@ main {
 }
 
 .mainSection {
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 1vw;
     margin: 6%;
     padding: 4%;
     padding-left: 6%;
@@ -191,6 +151,124 @@ main {
     margin-left: 0%;
 }
 
+/* Contact section/footer styling */
+
+#footerBackground {
+    background-image: url(/CATWIC066_FTO2301_GroupB_CatherineWickham_ITW9_FinalResume/images/backgroundLarge.jpg);
+    background-repeat:no-repeat ;
+    background-size:100% ;
+    background-attachment:fixed;
+    background-position: center;
+    background-position-y: 40%;
+}
+
+footer {
+    background-color: rgb(17, 23, 23, 0.5);
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contactHeading {
+    width: 80%;
+    margin-top: 3%;
+    color: #E7E8E5;
+}
+
+.icons {
+    text-decoration: none;
+    color: #CA9256;
+    font-size: 2em;
+    padding-left:1%;
+    padding-right:1%;
+    filter: drop-shadow(0.5rem 0.5rem 0.75rem rgb(17, 23, 23, 0.8));
+}
+
+#iconsBox{
+    text-align: center;
+    margin: 2%;
+    width:100%;
+}
+
+#contactText {
+    width: 60%;
+    margin: 2%;
+}
+
+/* Form styling */
+
+form {
+    background-color: #111717;
+    border-radius: 1vw;
+    filter: drop-shadow(0rem 0rem 0.2rem #111717);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+input, textarea, select {
+    background-color: #111717;
+    color: #E7E8E5;
+    border-style: none;
+    border-bottom: rgba(86, 86, 86,1) solid;
+    border-width: 2px;
+    font-family: Poppins;
+    width: 80%;
+    margin: 1%;
+    font-size: 0.9em;
+}
+
+#formSubmit {
+    background-color:#CA9256; 
+    color: #ffffff;
+    border-radius: 5px;
+    border-color:#CA9256; 
+    border-style: outset;
+    border-width: 2px;
+    width: 20%;
+    font-size: 0.8em;
+}
+
+/* Icons animation */
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-8px);
+    filter:opacity(70%);}
+    }
+
+.icons :hover {
+    animation-name: bounce;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Profile pic animation */
+@keyframes pop {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+    }
+
+#profilePictureOuter :hover {
+    animation-name: pop;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Modifications to styling to improve responsiveness */
 /* ===================== Mobile ===================== */
 
 @media screen and (max-width: 500px) {
@@ -305,105 +383,4 @@ main {
     #heroContent{
         width: 40%;
     }
-}
-
-/* Icons animation */
-@keyframes bounce {
-    0% {transform: translateY(0px);}
-    100% {transform: translateY(-8px);
-    filter:opacity(70%);}
-    }
-
-.icons :hover {
-    animation-name: bounce;
-    animation-duration: 0.25s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-/* Profile pic animation */
-@keyframes pop {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.05);}
-    100% {transform: scale(1);}
-    }
-
-#profilePictureOuter :hover {
-    animation-name: pop;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-#profilePicture {
-    filter: drop-shadow(0.5rem 0.5rem 0.75rem rgb(17, 23, 23, 0.8));
-    border-style: inset;
-    border-color: #CA9256;
-    border-width: 0.5vw;
-}
-
-/* Layout of Contact section with flexbox */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#contactHeading {
-    width: 80%;
-    margin-top: 3%;
-    color: #E7E8E5;
-}
-
-#contactText {
-    width: 60%;
-    margin: 2%;
-}
-
-#iconsBox{
-    text-align: center;
-    margin: 2%;
-    width:100%;
-}
-
-/* Form styling */
-
-form {
-    background-color: #111717;
-    border-radius: 1vw;
-    filter: drop-shadow(0rem 0rem 0.2rem #111717);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: fit-content;
-    padding: 2%;
-    margin-bottom: 3%;
-}
-
-input, textarea, select {
-    background-color: #111717;
-    color: #E7E8E5;
-    border-style: none;
-    border-bottom: rgba(86, 86, 86,1) solid;
-    border-width: 2px;
-    font-family: Poppins;
-    width: 80%;
-    margin: 1%;
-    font-size: 0.9em;
-}
-
-#formSubmit {
-    background-color:#CA9256; 
-    color: #ffffff;
-    border-radius: 5px;
-    border-color:#CA9256; 
-    border-style: outset;
-    border-width: 2px;
-    width: 20%;
-    font-size: 0.8em;
 }
