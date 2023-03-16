@@ -108,7 +108,6 @@ header {
 
 #heroContent {
     flex-wrap: wrap;
-    width: 50%;
     margin: 5%;
     display: flex;
     justify-content: center;
@@ -154,6 +153,14 @@ main {
     padding: 4%;
     padding-left: 6%;
     padding-right: 6%;
+}
+
+.sectionItem {
+    padding-top: 4%;
+}
+
+#experienceItem1, #educationItem1 {
+    padding-top: 1%;
 }
 
 #education {
