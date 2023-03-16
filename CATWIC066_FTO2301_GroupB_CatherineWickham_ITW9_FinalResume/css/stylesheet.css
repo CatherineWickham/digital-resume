@@ -24,7 +24,7 @@ nav {
 
 header {
     background-color: rgb(17, 23, 23, 0.5);
-    width: 100%;
+    width: fit-content;
 }
 
 #footerBackground {
@@ -49,14 +49,21 @@ footer {
 
 h1 {
     color: #E7E8E5;
+    font-size: 1.8em;
 }
 
 h2 {
     color: #CA9256;
+    font-size: 1.4em;
+}
+
+#careerTitle {
+    color: #A5C9C5;
 }
 
 h3 {
     color: #A5C9C5;
+    font-size: 1.1em;
 }
 
 p {
@@ -70,7 +77,7 @@ p {
 .icons {
     text-decoration: none;
     color: #CA9256;
-    margin: 1%;
+    margin: 2%;
     font-size: 2em;
 }
 
@@ -96,6 +103,7 @@ button {
     padding: 2%;
     padding-left: 4%;
     padding-right: 4%;
+    font-size: 2vw;
 }
 
 a.heroButton {
@@ -119,14 +127,16 @@ nav {
     grid-template-columns: 3% 1fr 15% 15% 15% 15% ;
     grid-template-rows: 6vh;
     grid-gap: 0.5%;
-    width: 100%;
+    width: 100vw;
     position: fixed;
+    height: 4vh;
 }
 
 a.navButton {
     display: grid;
     align-items: center;
     justify-items: center;
+    height: 4vh;
 }
 
 #navTitle {
@@ -134,6 +144,7 @@ a.navButton {
     align-items: center;
     justify-items: left;
     color: #E7E8E5;
+    height: 4vh;
 }
 
 #downloadCV {
@@ -142,7 +153,8 @@ a.navButton {
     justify-items: center;
     text-decoration: none;
     color: #CA9256;
-    font-size: 1.2em;  
+    font-size: 1.2em;
+    height: 4vh;  
 }
 
 /* Layout of Hero section with flexbox */
@@ -151,16 +163,11 @@ header {
     padding: 10%;
     display: flex;
     align-items: center;
-}
-
-#profilePictureOuter {
-    margin-left: 2%;
+    flex-direction: column;
 }
 
 #heroContent {
     flex-wrap: wrap;
-    width: 50%;
-    margin: 5%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -200,7 +207,62 @@ footer {
 }
 
 #iconsBox{
-    flex: 1;
+    flex: 1.5;
     text-align: center;
     margin: 4%;
+}
+
+/* ===================== Mobile ===================== */
+
+@media screen and (max-width: 425px) {
+    main{
+        flex-direction: column;
+    }
+    #education {
+        margin: 6%;
+        margin-top: 0%
+    }
+    #profilePictureOuter{
+        margin: 0%;
+    }
+    body{
+        font-size: 0.7em;
+    }
+    nav{
+        font-size: 2.5vw;
+    }
+    .icons {
+        font-size: 6vw;
+    }
+    header {
+        padding-top: 15%;
+    }
+    #profilePicture {
+        height: 25vw;
+        width: auto;
+    }
+    #headerBackground {
+        background-position: top;
+    }
+    #footerBackground {
+        background-position: bottom;
+    }
+}
+
+/* ===================== Tablet ===================== */
+
+@media screen and (min-width: 426px) {
+
+}
+
+/* ===================== Laptop ===================== */
+
+@media screen and (min-width: 1024px) {
+
+}
+
+/* ===================== Large laptop ===================== */
+
+@media screen and (min-width: 1440px) {
+
 }
